@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop - Cycle Store</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesoeet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+</head>
+
+<body>
+    <!-- header section start -->
+    <div class="header_section header_bg">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"
+                    style="background-image:none; display:flex; align-items:center; justify-content:center;"><i
+                        class="fa fa-bars" style="color:#fff; font-size:30px;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mission-vision.html">Misyon-Vizyon</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ürünlerimiz
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownProducts">
+                            <a class="dropdown-item" href="shop.html">Ürünlerimiz</a>
+                            <a class="dropdown-item" href="shop.html#mountain">Dağ Bisikletleri</a>
+                            <a class="dropdown-item" href="shop.html#road">Yol Bisikletleri</a>
+                            <a class="dropdown-item" href="shop.html#kids">Çocuk Bisikletleri</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUnits" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Birimlerimiz
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownUnits">
+                            <a class="dropdown-item" href="units.html">Tüm Birimler</a>
+                            <a class="dropdown-item" href="units.html#sales">Satış Birimleri</a>
+                            <a class="dropdown-item" href="units.html#service">Servis Birimleri</a>
+                            <a class="dropdown-item" href="units.html#hr">İnsan Kaynakları</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="announcements.html">Duyurular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="statistics.html">İstatistikler</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="main">
+                <span style="font-size:36px;cursor:pointer; color: #fff" onclick="openNav()"><i class="fa fa-bars"
+                        aria-hidden="true"></i></span>
+            </div>
+        </nav>
+    </div>
+    <!-- header section end -->
+
+    <!-- cycle section start -->
+    <div class="cycle_section layout_padding">
+        <div class="container">
+            <h1 class="cycle_taital">Ürünlerimiz</h1>
+            <p class="cycle_text">Özel bisiklet koleksiyonumuza göz atın.</p>
+
+            <!-- Search Bar -->
+            <div class="search_container" style="text-align: center; margin-bottom: 40px; margin-top: 20px;">
+                <input type="text" id="productSearch" onkeyup="filterProducts()"
+                    placeholder="Ürün Ara (Örn: Dağ, Yol, Çocuk)..." class="form-control"
+                    style="max-width: 500px; margin: 0 auto; border-radius: 30px; padding: 20px 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            </div>
+
+            <!-- Mountain Bikes Section -->
+            <div id="mountain">
+                <!-- Product 1: Mountain 1 (Image Left) -->
+                <div class="cycle_section_2 layout_padding product-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box_main">
+                                <h6 class="number_text">01</h6>
+                                <div class="image_2"><img src="images/img-1.png"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="cycles_text">Kaplan Dağ <br>Bisikleti</h1>
+                            <p class="lorem_text">Zorlu arazi ve macera için üretildi. Kaplanın en yeni dağ bisikleti.
+                            </p>
+                            <div class="btn_main">
+                                <div class="buy_bt"><a href="product-mountain-1.html">İncele</a></div>
+                                <h4 class="price_text">Fiyat <span style=" color: #f7c17b">$</span> <span
+                                        style=" color: #325662">300</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Mountain 2 (Text Left) -->
+                <div class="cycle_section_3 layout_padding product-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="cycles_text">Dağ <br>Bisikleti 01</h1>
+                            <p class="lorem_text">Sağlam kadro ve geniş lastikler ile her türlü araziye uygun.</p>
+                            <div class="btn_main">
+                                <div class="buy_bt"><a href="product-mountain-2.html">İncele</a></div>
+                                <h4 class="price_text">Fiyat <span style=" color: #f7c17b">$</span> <span
+                                        style=" color: #325662">300</span></h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box_main_3">
+                                <h6 class="number_text_2">02</h6>
+                                <div class="image_2"><img src="images/img-2.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Road Bikes Section -->
+            <div id="road">
+                <!-- Product 3: Road 1 (Image Left) -->
+                <div class="cycle_section_2 layout_padding product-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box_main">
+                                <h6 class="number_text">03</h6>
+                                <div class="image_2"><img src="images/yol_bisiklet1.png"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="cycles_text">Kaplan Yol <br>Bisikleti</h1>
+                            <p class="lorem_text">Hız ve performans için tasarlandı. Yollarda rüzgar gibi esin.</p>
+                            <div class="btn_main">
+                                <div class="buy_bt"><a href="product-road-1.html">İncele</a></div>
+                                <h4 class="price_text">Fiyat <span style=" color: #f7c17b">$</span> <span
+                                        style=" color: #325662">500</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Artistik (Text Left) -->
+                <div class="cycle_section_3 layout_padding product-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="cycles_text">Artistik <br>Bisiklet</h1>
+                            <p class="lorem_text">Şehir içinde stilinizi yansıtın. Özel tasarım ve konfor.</p>
+                            <div class="btn_main">
+                                <div class="buy_bt"><a href="product-artistik.html">İncele</a></div>
+                                <h4 class="price_text">Fiyat <span style=" color: #f7c17b">$</span> <span
+                                        style=" color: #325662">400</span></h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box_main_3">
+                                <h6 class="number_text_2">04</h6>
+                                <div class="image_2"><img src="images/artistik_bisiklet.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kids Bikes Section -->
+            <div id="kids">
+                <!-- Product 5: Kids 1 (Image Left) -->
+                <div class="cycle_section_2 layout_padding product-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box_main">
+                                <h6 class="number_text">05</h6>
+                                <div class="image_2"><img src="images/img-3.png"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="cycles_text">Kaplan Çocuk <br>Bisikleti</h1>
+                            <p class="lorem_text">Çocuklar için güvenli ve eğlenceli. İlk bisiklet deneyimi için ideal.
+                            </p>
+                            <div class="btn_main">
+                                <div class="buy_bt"><a href="product-kids-1.html">İncele</a></div>
+                                <h4 class="price_text">Fiyat <span style=" color: #f7c17b">$</span> <span
+                                        style=" color: #325662">200</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Kids 2 (Text Left) -->
+                <div class="cycle_section_3 layout_padding product-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="cycles_text">Çocuk <br>Bisikleti 03</h1>
+                            <p class="lorem_text">Yan tekerlekleri ve canlı renkleri ile çocukların favorisi.</p>
+                            <div class="btn_main">
+                                <div class="buy_bt"><a href="product-kids-2.html">İncele</a></div>
+                                <h4 class="price_text">Fiyat <span style=" color: #f7c17b">$</span> <span
+                                        style=" color: #325662">150</span></h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box_main_3">
+                                <h6 class="number_text_2">06</h6>
+                                <div class="image_2"><img src="images/img-4.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="read_btn_main">
+                <div class="read_bt"><a href="#">Daha Fazla</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- cycle section end -->
+
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12 padding_0">
+                    <div class="map_main">
+                        <div class="map-responsive">
+                            <iframe
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Kocaeli+Üniversitesi"
+                                width="600" height="400" frameborder="0" style="border:0; width: 100%;"
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="call_text"><a href="#"><img src="images/map-icon.png"><span
+                                class="padding_left_0">Kocaeli Üniversitesi, Teknoloji Fakültesi</span></a></div>
+                    <div class="call_text"><a href="#"><img src="images/call-icon.png"><span class="padding_left_0">+90
+                                123 456 78 90</span></a></div>
+                    <div class="call_text"><a href="#"><img src="images/mail-icon.png"><span
+                                class="padding_left_0">info@kaplanbisiklet.com</span></a></div>
+                    <div class="call_text" style="color: white; margin-top: 20px;">
+                        <h4 style="color: white;">TASARLAYAN:</h4>
+                        <p>Öğrenci Adı: <strong>MUSTAFA MEHMET ASLANDAĞ</strong></p>
+                        <p>Öğrenci Numarası: <strong>231307067</strong></p>
+                    </div>
+                    <div class="social_icon">
+                        <ul>
+                            <li><a href="#"><img src="images/fb-icon1.png"></a></li>
+                            <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                            <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                            <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                        </ul>
+                    </div>
+                    <form onsubmit="return subscribeToNewsletter(event)">
+                        <input type="email" class="email_text" placeholder="Email Adresinizi Girin"
+                            name="Enter Your Email" required>
+                        <div class="subscribe_bt"><button type="submit">Abone <ol></ol></button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+        <div class="container">
+            <p class="copyright_text">Tüm hakları saklıdır.<a href="https://html.design"> Free html
+                    Templates</p>
+            <p class="copyright_text">Disrtributed By. <a href="https://themewagon.com">ThemeWagon </a></p>
+        </div>
+    </div>
+    <!-- copyright section end -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+        $("#main").click(function () {
+            $("#navbarSupportedContent").toggleClass("nav-normal")
+        })
+
+        function filterProducts() {
+            var input = document.getElementById("productSearch");
+            var filter = input.value.toUpperCase();
+            var nodes = document.getElementsByClassName("product-item");
+            for (var i = 0; i < nodes.length; i++) {
+                var text = nodes[i].innerText;
+                if (text.toUpperCase().indexOf(filter) > -1) {
+                    nodes[i].style.display = "";
+                } else {
+                    nodes[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünler - Admin Paneli</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="../images/logo.png" alt="Cycle Admin Logo">
+        </div>
+        <h3 class="text-center pb-3">Admin Paneli</h3>
+        <a href="index.html"><i class="fa fa-tachometer"></i> Dashboard</a>
+        <a href="products.html" class="active"><i class="fa fa-bicycle"></i> Ürünler</a>
+        <a href="announcements.html"><i class="fa fa-bullhorn"></i> Duyurular</a>
+        <a href="units.html"><i class="fa fa-building"></i> Birimler</a>
+        <a href="messages.html"><i class="fa fa-envelope"></i> Mesajlar</a>
+        <a href="../index.html"><i class="fa fa-sign-out"></i> Siteye Dön</a>
+    </div>
+
+    <div class="content">
+        <h2>Ürün Yönetimi</h2>
+        <p>Ürünlerinizi yönetin.</p>
+        <button class="btn btn-custom-teal mb-3" data-toggle="modal" data-target="#addProductModal"><i
+                class="fa fa-plus"></i> Yeni Ürün Ekle</button>
+
+        <table class="table table-bordered table-striped bg-white">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Resim</th>
+                    <th>Ad</th>
+                    <th>Kategori</th>
+                    <th>Fiyat</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="../images/img-1.png" width="50"></td>
+                    <td>Kaplan Dağ Bisikleti</td>
+                    <td>Mountain</td>
+                    <td>$300</td>
+                    <td>
+                        <button class="btn btn-sm btn-custom-gold"><i class="fa fa-edit"></i> Düzenle</button>
+                        <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Sil</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="../images/img-2.png" width="50"></td>
+                    <td>Dağ Bisikleti 01</td>
+                    <td>Mountain</td>
+                    <td>$300</td>
+                    <td>
+                        <button class="btn btn-sm btn-custom-gold"><i class="fa fa-edit"></i> Düzenle</button>
+                        <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Sil</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="../images/yol_bisiklet1.png" width="50"></td>
+                    <td>Kaplan Yol Bisikleti</td>
+                    <td>Road</td>
+                    <td>$500</td>
+                    <td>
+                        <button class="btn btn-sm btn-custom-gold"><i class="fa fa-edit"></i> Düzenle</button>
+                        <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Sil</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="../images/artistik_bisiklet.png" width="50"></td>
+                    <td>Artistik Bisiklet</td>
+                    <td>Road</td>
+                    <td>$400</td>
+                    <td>
+                        <button class="btn btn-sm btn-custom-gold"><i class="fa fa-edit"></i> Düzenle</button>
+                        <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Sil</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="../images/img-3.png" width="50"></td>
+                    <td>Kaplan Çocuk Bisikleti</td>
+                    <td>Kids</td>
+                    <td>$200</td>
+                    <td>
+                        <button class="btn btn-sm btn-custom-gold"><i class="fa fa-edit"></i> Düzenle</button>
+                        <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Sil</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><img src="../images/img-4.png" width="50"></td>
+                    <td>Çocuk Bisikleti 03</td>
+                    <td>Kids</td>
+                    <td>$150</td>
+                    <td>
+                        <button class="btn btn-sm btn-custom-gold"><i class="fa fa-edit"></i> Düzenle</button>
+                        <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Sil</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Add Product Modal -->
+    <div class="modal fade" id="addProductModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Yeni Ürün Ekle</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Ürün Adı</label>
+                            <input type="text" class="form-control" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label>Kategori</label>
+                            <select class="form-control">
+                                <option>Dağ Bisikleti</option>
+                                <option>Yol Bisikleti</option>
+                                <option>Çocuk Bisikleti</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Fiyat</label>
+                            <input type="number" class="form-control" placeholder="0.00">
+                        </div>
+                        <div class="form-group">
+                            <label>Açıklama</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Ürün Resmi</label>
+                            <input type="file" class="form-control-file">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-custom-teal"
+                        onclick="alert('Ürün Eklendi! (X Ürünü)')">Ürünü Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

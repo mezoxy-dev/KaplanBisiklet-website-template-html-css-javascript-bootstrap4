@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli - KaplanBisiklet</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="../images/logo.png" alt="Cycle Admin Logo">
+        </div>
+        <h3 class="text-center pb-3">Admin Paneli</h3>
+        <a href="index.html" class="active"><i class="fa fa-tachometer"></i> Dashboard</a>
+        <a href="products.html"><i class="fa fa-bicycle"></i> Ürünler</a>
+        <a href="announcements.html"><i class="fa fa-bullhorn"></i> Duyurular</a>
+        <a href="units.html"><i class="fa fa-building"></i> Birimler</a>
+        <a href="messages.html"><i class="fa fa-envelope"></i> Mesajlar</a>
+        <a href="../index.html"><i class="fa fa-sign-out"></i> Siteye Dön</a>
+    </div>
+
+    <div class="content">
+        <h2>Dashboard</h2>
+        <p>Hoşgeldiniz KaplanBisiklet Admin Paneli.</p>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card-counter primary">
+                    <i class="fa fa-bicycle"></i>
+                    <span class="count-numbers">12</span>
+                    <span class="count-name">Ürünler</span>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card-counter danger">
+                    <i class="fa fa-bullhorn"></i>
+                    <span class="count-numbers">5</span>
+                    <span class="count-name">Duyurular</span>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card-counter success">
+                    <i class="fa fa-building"></i>
+                    <span class="count-numbers">4</span>
+                    <span class="count-name">Birimler</span>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card-counter info">
+                    <i class="fa fa-users"></i>
+                    <span class="count-numbers">35</span>
+                    <span class="count-name">Kullanıcılar</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

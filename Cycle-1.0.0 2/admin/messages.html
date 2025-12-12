@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesajlar - Admin Paneli</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="../images/logo.png" alt="Cycle Admin Logo">
+        </div>
+        <h3 class="text-center pb-3">Admin Paneli</h3>
+        <a href="index.html"><i class="fa fa-tachometer"></i> Dashboard</a>
+        <a href="products.html"><i class="fa fa-bicycle"></i> Ürünler</a>
+        <a href="announcements.html"><i class="fa fa-bullhorn"></i> Duyurular</a>
+        <a href="units.html"><i class="fa fa-building"></i> Birimler</a>
+        <a href="messages.html" class="active"><i class="fa fa-envelope"></i> Mesajlar</a>
+        <a href="../index.html"><i class="fa fa-sign-out"></i> Siteye Dön</a>
+    </div>
+
+    <div class="content">
+        <h2>Mesajlar / şikayetler</h2>
+        <p>İletişim formundan gelen mesajları ve şikayetleri görüntüleyin.</p>
+
+        <table class="table table-bordered table-striped bg-white">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>İsim</th>
+                    <th>Email</th>
+                    <th>Konu/Başlık</th>
+                    <th>İçerik</th>
+                    <th>Tarih</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ayşe Öncü</td>
+                    <td>ayse@example.com</td>
+                    <td>Ürün Sorgusu</td>
+                    <td>Kırmızı dağ bisikletinden elinizde var mı?</td>
+                    <td>2025-12-05</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Barış Karasoy</td>
+                    <td>barisJarasoy@example.com</td>
+                    <td>Şikayet</td>
+                    <td>Teslimat tarihi geçmesine rağmen ürünüm gelmedi.</td>
+                    <td>2025-12-04</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

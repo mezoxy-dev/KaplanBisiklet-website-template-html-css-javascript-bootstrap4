@@ -1,0 +1,196 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  background-color: #274d5a;
+  /* Brand Teal */
+  padding-top: 0;
+  color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.sidebar .logo-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #1f3e48;
+  /* Slightly darker teal for logo area */
+  margin-bottom: 20px;
+}
+
+.sidebar .logo-container img {
+  max-width: 150px;
+  height: auto;
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  color: #efefef;
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.sidebar a {
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #d1d1d1;
+  display: block;
+  transition: all 0.3s;
+  border-left: 4px solid transparent;
+}
+
+.sidebar a i {
+  width: 25px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  color: #ffffff;
+  background-color: #2c5663;
+  border-left-color: #f7c17b;
+  /* Brand Gold */
+}
+
+/* Content Area */
+.content {
+  margin-left: 260px;
+  padding: 30px;
+  transition: all 0.3s;
+}
+
+.content h2 {
+  font-weight: 700;
+  color: #274d5a;
+  margin-bottom: 10px;
+}
+
+.content p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Dashboard Cards */
+.card-counter {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin: 10px 0;
+  padding: 25px 20px;
+  background-color: #fff;
+  height: 120px;
+  border-radius: 8px;
+  transition: .3s linear all;
+  position: relative;
+  border-top: 4px solid #ddd;
+}
+
+.card-counter:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.card-counter.primary {
+  border-top-color: #274d5a;
+}
+
+/* Teal */
+.card-counter.danger {
+  border-top-color: #f7c17b;
+}
+
+/* Gold */
+.card-counter.success {
+  border-top-color: #20c997;
+}
+
+/* Green accent */
+.card-counter.info {
+  border-top-color: #17a2b8;
+}
+
+/* Cyan accent */
+
+.card-counter i {
+  font-size: 4em;
+  opacity: 0.15;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #274d5a;
+}
+
+.card-counter .count-numbers {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #274d5a;
+  display: block;
+}
+
+.card-counter .count-name {
+  position: absolute;
+  right: 25px;
+  top: 65px;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #888;
+  background-color: transparent;
+  opacity: 1;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Common Components */
+.table {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead th {
+  background-color: #274d5a;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+}
+
+.btn-custom-gold {
+  background-color: #f7c17b;
+  color: #fff;
+  border: none;
+}
+
+.btn-custom-gold:hover {
+  background-color: #e0a860;
+  color: #fff;
+}
+
+.btn-custom-teal {
+  background-color: #274d5a;
+  color: #fff;
+  border: none;
+}
+
+.btn-custom-teal:hover {
+  background-color: #1f3e48;
+  color: #fff;
+}

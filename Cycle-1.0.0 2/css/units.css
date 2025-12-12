@@ -1,0 +1,124 @@
+/* Units Section Redesign */
+.unit_section_container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.unit_card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 60px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.unit_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.unit_image {
+    height: 100%;
+    min-height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.unit_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.unit_card:hover .unit_image img {
+    transform: scale(1.05);
+}
+
+.unit_content {
+    padding: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.unit_title {
+    color: #325662;
+    /* Primary Dark Teal */
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.unit_title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #f7c17b;
+    /* Accent Gold */
+}
+
+.unit_manager {
+    color: #777;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.unit_manager i {
+    color: #f7c17b;
+    margin-right: 10px;
+    font-size: 18px;
+    width: auto;
+    /* Fix for fontawesome conflicts */
+}
+
+.unit_desc {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn-unit {
+    background-color: #325662;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    width: fit-content;
+    border: 2px solid #325662;
+    text-decoration: none;
+}
+
+.btn-unit:hover {
+    background-color: transparent;
+    color: #325662;
+}
+
+/* Helper for no padding columns */
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutters>.col,
+.no-gutters>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}

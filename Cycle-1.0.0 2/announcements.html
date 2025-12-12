@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Announcements - Cycle Store</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesoeet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+</head>
+
+<body>
+    <!-- header section start -->
+    <div class="header_section header_bg">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"
+                    style="background-image:none; display:flex; align-items:center; justify-content:center;"><i
+                        class="fa fa-bars" style="color:#fff; font-size:30px;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mission-vision.html">Misyon-Vizyon</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ürünler
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownProducts">
+                            <a class="dropdown-item" href="shop.html">Tüm Ürünler</a>
+                            <a class="dropdown-item" href="shop.html#mountain">Dağ Bisikletleri</a>
+                            <a class="dropdown-item" href="shop.html#road">Yol Bisikletleri</a>
+                            <a class="dropdown-item" href="shop.html#kids">Çocuk Bisikletleri</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUnits" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Units
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownUnits">
+                            <a class="dropdown-item" href="units.html">Tüm Birimler</a>
+                            <a class="dropdown-item" href="units.html#sales">Satış Birimleri</a>
+                            <a class="dropdown-item" href="units.html#service">Servis Birimleri</a>
+                            <a class="dropdown-item" href="units.html#hr">İnsan Kaynakları</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="announcements.html">Duyurular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="statistics.html">İstatistikler</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="main">
+                <span style="font-size:36px;cursor:pointer; color: #fff" onclick="openNav()"><i class="fa fa-bars"
+                        aria-hidden="true"></i></span>
+            </div>
+        </nav>
+    </div>
+    <!-- header section end -->
+
+    <!-- list section start -->
+    <div class="news_section layout_padding">
+        <div class="container">
+            <h1 class="news_taital">Tüm Duyurular</h1>
+
+            <!-- Search -->
+            <div class="row mb-4">
+                <div class="col-md-6 offset-md-3">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Duyurularda ara..."
+                        onkeyup="filterAccouncements()">
+                </div>
+            </div>
+
+            <div class="news_section_2 layout_padding" id="announcementList">
+                <div class="row">
+                    <!-- Item 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4 item">
+                        <div class="announcement_card" data-toggle="modal" data-target="#newsModal"
+                            onclick="setModalContent('New Mountain Bikes', 'Post by : Admin - 05-12-2025', 'New arrival of mountain bikes with enhanced suspension. Check them out in our store!')">
+                            <div class="card_img"><img src="images/img-6.png"></div>
+                            <div class="card_content">
+                                <h3 class="speed_text">Yeni Dağ Bisikletleri</h3>
+                                <div class="post_text">Post by : Admin <span style="float: right;">05-12-2025</span>
+                                </div>
+                                <p>Dağ bisikletlerinde stoklar yenilendi...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4 item">
+                        <div class="announcement_card" data-toggle="modal" data-target="#newsModal"
+                            onclick="setModalContent('Season Sale', 'Post by : Admin - 01-12-2025', 'Big discounts on all road bikes this season. Up to 50% off!')">
+                            <div class="card_img"><img src="images/img-7.png"></div>
+                            <div class="card_content">
+                                <h3 class="speed_text">Sezon İndirimleri</h3>
+                                <div class="post_text">Post by : Admin <span style="float: right;">01-12-2025</span>
+                                </div>
+                                <p>Tüm yol bisikletlerinde sezon sonu indirim fırsatlarını kaçırmayın...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4 item">
+                        <div class="announcement_card" data-toggle="modal" data-target="#newsModal"
+                            onclick="setModalContent('Service Center Opening', 'Post by : Admin - 28-11-2025', 'We are opening a new service center in the city. Come visit us for free checkups.')">
+                            <div class="card_img"><img src="images/img-8.png"></div>
+                            <div class="card_content">
+                                <h3 class="speed_text">Yeni Service Noktamız</h3>
+                                <div class="post_text">Post by : Admin <span style="float: right;">28-11-2025</span>
+                                </div>
+                                <p>Şehre yeni bir servis noktası daha açıyoruz...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="col-lg-4 col-md-6 mb-4 item">
+                        <div class="announcement_card" data-toggle="modal" data-target="#newsModal"
+                            onclick="setModalContent('Safety First', 'Post by : Admin - 20-11-2025', 'Importance of wearing helmets and safety gear. Your safety is our priority.')">
+                            <div class="card_img"><img src="images/img-6.png"></div>
+                            <div class="card_content">
+                                <h3 class="speed_text">Önce Güvenliğiniz</h3>
+                                <div class="post_text">Post by : Admin <span style="float: right;">20-11-2025</span>
+                                </div>
+                                <p>Kask takmanın ve güvenlik aksesuarlarının önemi...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="col-lg-4 col-md-6 mb-4 item">
+                        <div class="announcement_card" data-toggle="modal" data-target="#newsModal"
+                            onclick="setModalContent('Community Ride', 'Post by : Admin - 15-11-2025', 'Join us for a community ride this weekend. All ages welcome!')">
+                            <div class="card_img"><img src="images/img-7.png"></div>
+                            <div class="card_content">
+                                <h3 class="speed_text">Topluluk Seferi</h3>
+                                <div class="post_text">Post by : Admin <span style="float: right;">15-11-2025</span>
+                                </div>
+                                <p>Haftasonu düzenleyeceğimiz topluluk seferine sen de katıl...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- list section end -->
+
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12 padding_0">
+                    <div class="map_main">
+                        <div class="map-responsive">
+                            <iframe
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Kocaeli+Üniversitesi"
+                                width="600" height="400" frameborder="0" style="border:0; width: 100%;"
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="call_text"><a href="#"><img src="images/map-icon.png"><span
+                                class="padding_left_0">Kocaeli Üniversitesi, Teknoloji Fakültesi</span></a></div>
+                    <div class="call_text"><a href="#"><img src="images/call-icon.png"><span class="padding_left_0">+90
+                                123 456 78 90</span></a></div>
+                    <div class="call_text"><a href="#"><img src="images/mail-icon.png"><span
+                                class="padding_left_0">info@kaplanbisiklet.com</span></a></div>
+                    <div class="call_text" style="color: white; margin-top: 20px;">
+                        <h4 style="color: white;">TASARLAYAN:</h4>
+                        <p>Öğrenci Adı: <strong>MUSTAFA MEHMET ASLANDAĞ</strong></p>
+                        <p>Öğrenci Numarası: <strong>231307067</strong></p>
+                    </div>
+                    <div class="social_icon">
+                        <ul>
+                            <li><a href="#"><img src="images/fb-icon1.png"></a></li>
+                            <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                            <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                            <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                        </ul>
+                    </div>
+                    <form onsubmit="return subscribeToNewsletter(event)">
+                        <input type="email" class="email_text" placeholder="Email Adresinizi Girin"
+                            name="Enter Your Email" required>
+                        <div class="subscribe_bt"><button type="submit">Abone <ol></ol></button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+        <div class="container">
+            <p class="copyright_text">Tüm hakları saklıdır.<a href="https://html.design"> Free html
+                    Templates</p>
+            <p class="copyright_text">Disrtributed By. <a href="https://themewagon.com">ThemeWagon </a></p>
+        </div>
+    </div>
+    <!-- copyright section end -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+        $("#main").click(function () {
+            $("#navbarSupportedContent").toggleClass("nav-normal")
+        })
+
+        function filterAccouncements() {
+            var input, filter, container, items, title, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            container = document.getElementById("announcementList");
+            items = container.getElementsByClassName("item");
+
+            for (i = 0; i < items.length; i++) {
+                title = items[i].getElementsByClassName("speed_text")[0];
+                if (title) {
+                    txtValue = title.textContent || title.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        items[i].style.display = "";
+                    } else {
+                        items[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Modal -->
+    <div class="modal fade" id="newsModal" tabindex="-1" role="dialog" aria-labelledby="newsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsModalLabel">Haber Detayı</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 id="modalNewsTitle"></h4>
+                    <p id="modalNewsDate" style="font-size: 0.9em; color: gray;"></p>
+                    <hr>
+                    <p id="modalNewsContent"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function setModalContent(title, date, content) {
+            document.getElementById('modalNewsTitle').innerText = title;
+            document.getElementById('modalNewsDate').innerText = date;
+            document.getElementById('modalNewsContent').innerText = content;
+        }
+    </script>
+</body>
+
+</html>
