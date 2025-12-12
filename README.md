@@ -3,7 +3,7 @@
 ## 1. Proje Özeti
 **Proje Adı:** Cycle
 **Tarih:** 7 Aralık 2025
-**Geliştirici:** (İsminiz)
+**Geliştirici:** MUSTAFA MEHMET ASLANDAĞ
 
 Bu proje, modern ve profesyonel bir bisiklet satış platformu ile bu platformu yönetecek kapsamlı bir yönetim panelinin geliştirilmesini kapsamaktadır. Proje, son kullanıcılar için şık, duyarlı (responsive) ve etkileşimli bir e-ticaret arayüzü sunarken, yöneticiler için ürün, duyuru ve birim yönetimini kolaylaştıran işlevsel bir admin paneli içermektedir.
 
