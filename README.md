@@ -1,7 +1,7 @@
 # KaplanBisiklet - Web Tabanlı Bisiklet Satış ve Yönetim Sistemi Proje Raporu
 
 ## 1. Proje Özeti
-**Proje Adı:** Cycle
+**Proje Adı:** KaplanBisiklet
 **Tarih:** 7 Aralık 2025
 **Geliştirici:** MUSTAFA MEHMET ASLANDAĞ
 
