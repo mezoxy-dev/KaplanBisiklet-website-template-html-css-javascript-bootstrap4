@@ -1,4 +1,4 @@
-# Cycle - Web Tabanlı Bisiklet Satış ve Yönetim Sistemi Proje Raporu
+# KaplanBisiklet - Web Tabanlı Bisiklet Satış ve Yönetim Sistemi Proje Raporu
 
 ## 1. Proje Özeti
 **Proje Adı:** Cycle
